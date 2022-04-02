@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%7cRoboto:300&display=swap">
 </head>
 
-<body>    
+<body <?php body_class();?>>
     <header data-uk-sticky="top: 400; cls-active: in-sticky">
         
     </header>
