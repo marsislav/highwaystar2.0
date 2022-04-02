@@ -18,7 +18,7 @@
             <?php the_posts_pagination(); ?>
             
         <?php } else { ?>
-                <h3>No posts yet :(</h3>
+                <h3><?php echo esc_html_e('No posts yet :(' , 'hs');?></h3>
                 <?php }?>
     </main>
             
