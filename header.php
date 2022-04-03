@@ -13,6 +13,7 @@
 </head>
 
 <body <?php body_class();?>>
+<a href="#content" class="skip-link"><?php esc_attr_e('Skip to content', '_themename');?></a>
     <header role="role">
     <div class="container">
         <div class="row">
@@ -23,7 +24,14 @@
                 <?php get_search_form(true);?>
             </div>
         </div>
+
+        <div class="navigation">
+            <div class="container">
+                <nav class="header-nav" role="navigation" aria-label="<?php esc_html_e( 'Main Navigation', '_themename' ) ?>">
+                    <?php wp_nav_menu( array('theme_location' => 'main-menu') ) ?>
+                </nav>
+            </div>
+        </div>
     </div>
-        
     </header>
 <div id="content">
