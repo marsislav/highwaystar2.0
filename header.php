@@ -14,6 +14,16 @@
 
 <body <?php body_class();?>>
     <header role="role">
-
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="logo">
+                    <a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html(bloginfo('name'));?></a>
+                </div>
+                <?php get_search_form(true);?>
+            </div>
+        </div>
+    </div>
         
     </header>
+<div id="content">
