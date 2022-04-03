@@ -3,6 +3,8 @@
     <main>
         <div class="container">
             <div class="row">
+                <div class="col-md-<?php echo is_active_sidebar('primary-sidebar') ? '8' : '12';?>">
+
             <?php if (have_posts()){?>
                 <?php while(have_posts()) {?>
                     <?php the_post();?>
@@ -25,7 +27,12 @@
                     <h3><?php echo esc_html_e('No posts yet :(' , 'hs');?></h3>
                     <?php }?>
             </div>
-            <?php get_sidebar();?>
+            </div>
+
+            <?php if (is_active_sidebar('primary-sidebar')){?>
+                <div class="col-md-4"><?php get_sidebar();?></div>
+            <?php } ?>
+
         </div>
     </main>
             
