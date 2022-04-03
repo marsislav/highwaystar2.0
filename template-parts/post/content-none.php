@@ -1,0 +1,1 @@
+<h3><?php echo esc_html_e('No posts yet :(' , '_themename');?></h3>

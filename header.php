@@ -10,11 +10,10 @@
     <?php wp_head(); ?>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%7cRoboto:300&display=swap">
 </head>
 
 <body <?php body_class();?>>
-    <header data-uk-sticky="top: 400; cls-active: in-sticky">
+    <header role="role">
+
         
     </header>
