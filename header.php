@@ -19,7 +19,11 @@
         <div class="row">
             <div class="col">
                 <div class="logo">
+                    <?php if (has_custom_logo()){
+                        the_custom_logo();}
+                        else { ?>
                     <a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html(bloginfo('name'));?></a>
+                    <?php } ?>
                 </div>
                 <?php get_search_form(true);?>
             </div>

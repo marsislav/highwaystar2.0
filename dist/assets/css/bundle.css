@@ -7,8 +7,15 @@
 /*# sourceMappingURL=bootstrap-grid.min.css.map */
 
 /*Main css*/
+html, body {
+    margin:0;
+    padding:0;
+}
 
 /*Footer*/
+footer {
+    padding:20px 0;
+}
 .footer-dark{
     background:#262626;
 }

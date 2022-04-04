@@ -10,7 +10,25 @@ $wp_customize->selective_refresh->add_partial('blogname', array (
         bloginfo('name');
     }
 ));
+/*General settings*/
 
+    $wp_customize->add_section('_themename_general_options', array (
+        'title'=>esc_html__('General options', '_themename'),
+        'description'=>esc_html__('You can change general options from here', '_themename')
+    ));
+
+    $wp_customize->add_setting('_themename_accent_colour', array (
+        'default'=>'#20ddae',
+        'sanitize_callback'=>'sanitize_hex_color',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, '_themename_accent_colour', array (
+        'label'=>__('Accent color', '_themename'),
+        'section'=>'_themename_general_options',
+    )));
+
+
+    /*Footer settings*/
     $wp_customize->selective_refresh->add_partial('$_themename_footer_partial', array (
         'settings'=>array('_themename_site_info', '_themename_footer_bg', '_themename_footer_layout' ),
         'selector'=>'footer',
@@ -25,7 +43,6 @@ $wp_customize->selective_refresh->add_partial('blogname', array (
     $wp_customize->add_section('_themename_footer_options', array (
         'title'=>esc_html__('Footer options', '_themename'),
         'description'=>esc_html__('You can change footer options from here', '_themename'),
-        'priority'=>30
     ));
 
 $wp_customize->add_setting('_themename_site_info', array (

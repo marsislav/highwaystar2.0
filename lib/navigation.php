@@ -19,7 +19,7 @@ function _themename_aria_hasdropdown($atts, $item, $args) {
 }
 add_filter('nav_menu_link_attributes', '_themename_aria_hasdropdown', 10, 3);
 
-function _themename_submenu_button($dir='down', $title){
+function _themename_submenu_button($title, $dir='down'){
     $button='<button class="menu-button">';
     $button.='<span class="screen-reader-text menu-button-show">' . sprintf(esc_html__('Show %s submenu','_themename'),
         $title) .'>';
