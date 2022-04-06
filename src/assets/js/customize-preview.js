@@ -3,7 +3,7 @@ import strip_tags from './helpers/strip-tags';
 
 wp.customize( 'blogname', (value) => {
     value.bind( (to) => {
-        $('.header__blogname').html(to);
+        $('.header').html(to);
     } )
 })
 
@@ -35,6 +35,6 @@ wp.customize( '_themename_accent_colour', (value) => {
 
 wp.customize( '_themename_site_info', (value) => {
     value.bind( (to) => {
-        $('.site-info__text').html(strip_tags(to, '<a>'));
+        $('.site-info').html(strip_tags(to, '<a>'));
     } )
 })

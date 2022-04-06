@@ -19,6 +19,7 @@ $wp_customize->selective_refresh->add_partial('blogname', array (
 
     $wp_customize->add_setting('_themename_accent_colour', array (
         'default'=>'#20ddae',
+        'transport'=>'postMessage',
         'sanitize_callback'=>'sanitize_hex_color',
     ));
 

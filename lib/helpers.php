@@ -31,7 +31,7 @@ function _themename_readmore_link() {
     );
     echo '</a>';
 }
-/*
+
 function _themename_delete_post() {
     $url = add_query_arg([
         'action' => '_themename_delete_post',
@@ -42,7 +42,7 @@ function _themename_delete_post() {
         return "<a href='" . esc_url($url) . "'>" . esc_html__( 'Delete Post', '_themename' ) . "</a>";
     }
 }
-
+/*
 function _themename_meta( $id, $key, $default) {
     $value = get_post_meta( $id, $key, true );
     if(!$value && $default) {
