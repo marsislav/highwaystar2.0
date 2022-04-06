@@ -10,4 +10,5 @@
     </div>
     <?php _themename_readmore_link();?>
     <?php echo _themename_delete_post();?>
+
 </article>
