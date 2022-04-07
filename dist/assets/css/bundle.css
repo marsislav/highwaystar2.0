@@ -11,7 +11,22 @@ html, body {
     margin:0;
     padding:0;
 }
-
+.logo img {
+    max-width:250px;
+    height:auto;
+}
+header ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+huader ul li {
+    list-style-type:none;
+}
+a.skip-link{
+position: absolute;
+left: -1000px;
+}
 /*Footer*/
 footer {
     padding:20px 0;
