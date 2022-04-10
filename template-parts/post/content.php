@@ -22,7 +22,9 @@
         </header>
         <div>
             <?php if (is_single()){?>
-            <?php the_content();?>
+            <?php the_content();
+                  wp_link_pages();
+            ?>
             <?php } else {?>
                 <?php the_excerpt();?>
             <?php }?>
