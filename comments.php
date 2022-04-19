@@ -12,13 +12,14 @@ if (have_comments()) {?>
     esc_html(_n('%1$s Reply to "%1$s"',
     '%1$s Replies to "%1$s"', get_comments_number(), '_themename'
     )),
-    number_format_i18n(get_comments_number, get_the_title())
+    number_format_i18n(get_comments_number(), get_the_title())
     )?>
 </h2>
 <ul class="comment-list">
 <?php wp_list_comments(array(
 'avatar_size'=>200,
-'reply_text'=>'Reply'
+'reply_text'=>'Reply',
+'callback'=>'_themename_comment_callback'
 ));?>
 </ul>
 <?php the_comments_pagination ();?>
