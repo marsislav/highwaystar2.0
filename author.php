@@ -29,7 +29,7 @@ $author_website = get_the_author_meta( 'user_url', $author );
 
         <div class="row">
             <main role="main">
-                <?php get_template_part( 'loop', 'aut hor' ); ?>
+                <?php get_template_part( 'loop', 'author' ); ?>
             </main>
         </div>
       
